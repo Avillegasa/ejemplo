@@ -91,3 +91,12 @@ body {
     margin: 0;
 
 }
+
+main {
+    position: absolute;
+    top: 600px;
+    left: 10px;
+    background-color: white;
+    padding: 10px;
+    border: 2px solid black;
+}
