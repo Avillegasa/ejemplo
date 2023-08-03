@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://www.wallpapertip.com/wmimgs/82-823772_elegant-wallpaper-black.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+
+.bigote {
+    width: 180px;
+    height: 180px;
+    color: white;
+    border-radius: 50%;
+    left: 150px;
+    top: 150px;
+    position: absolute;
+    box-shadow:
+        150px 240px 0 0 currentColor,
+        300px 240px 0 0 currentColor,
+        390px -130px 0 0 rgb(104, 102, 102);
+    z-index: 3;
+}
+
+.monoculo {
+    width: 110px;
+    height: 110px;
+    border: 5px solid yellow;
+    border-radius: 50%;
+    background-color: lightblue;
+    position: absolute;
+    top: 50px;
+    left: 570px;
+    z-index: 5;
+}
+
+.bigote::before {
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: 120px;
+    width: 210px;
+    height: 120px;
+    border-bottom: solid 180px currentColor;
+    border-radius: 0 0 0 100%;
+    transform: rotate(-40deg);
+    transform-origin: right 210px;
+}
+
+.bigote::after {
+    content: "";
+    position: absolute;
+    left: 390px;
+    top: 120px;
+    width: 210px;
+    height: 120px;
+    border-bottom: solid 180px currentColor;
+    border-radius: 0 0 100% 0;
+    transform: rotate(40deg);
+    transform-origin: left 210px;
+}
+
+.line {
+    width: 12px;
+    height: 700px;
+    color: orange;
+    left: 150px;
+    top: 150px;
+    position: absolute;
+    box-shadow:
+        558px -50px 0 0 currentColor;
+}
+
+.cuadro-texto {
+    position: absolute;
+    left: 800px;
+    top: 150px;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    padding: 10px;
+    border: 2px solid white;
+}
+
+.cuadro-texto p {
+    margin: 0;
+
+}
